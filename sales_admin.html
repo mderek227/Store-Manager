@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Manage SaKES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <!-- Fonts for this app -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Store Manager</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="topnav">
+        <a href="sales_admin.html">Add Attendant</a>
+        <a href="sales_admin.html">View Product</a>
+        <a href="sales_admin.html">View Sales</a>
+        <a href="products_admin.html">Edit Products</a>
+        <a href="login.html">Log Out</a>
+    </div>
+
+
+
+    <div class="container">
+        <div class="page-title">
+            <h1>Summary of sales</h1>
+        </div>
+        
+        <div class="products">
+            <table id="allProducts">
+                <tr>
+                    <th>Store Attendant</th>
+                    <th>Sale ID</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td><a href="#">Moses</a></td>
+                    <td><a href="#">A1</a></td>
+                    <td><a href="#">Black Panther</a></td>
+                    <td>8</td>
+                    <td>Action</td>
+                    <td>20000</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Moses</a></td>
+                    <td><a href="#">A5</a></td>
+                    <td><a href="#">Coco</a></td>
+                    <td>3</td>
+                    <td>Animation</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td><a href="#">James</a></td>
+                    <td><a href="#">A20</a></td>
+                    <td><a href="#">Batman</a></td>
+                    <td>1</td>
+                    <td>Science Fiction</td>
+                    <td>15000</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Moses</a></td>
+                    <td><a href="#">A12</a></td>
+                    <td><a href="#">xxx</a></td>
+                    <td>1</td>
+                    <td>Commedy</td>
+                    <td>3000</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Jane</a></td>
+                    <td><a href="#">A8</a></td>
+                    <td><a href="#">Four Lions</a></td>
+                    <td>1</td>
+                    <td>Commedy</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Jane</a></td>
+                    <td><a href="#">A4</a></td>
+                    <td><a href="#">Happy son</a></td>
+                    <td>2</td>
+                    <td>Adventure</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td class="table-bottom">Total Sales</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="table-bottom">56000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Add Product Modal -->
+    <div class="container">
+        <div class="modal" id="addProductModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="add-product">
+                    <h2>Add a product</h2>
+                    <form action="#">
+                        <input type="text" placeholder="Enter product name" required>
+                        <select>
+                            <option value="0">Select Category</option>
+                            <option value="1">Commedy</option>
+                            <option value="2">Action</option>
+                            <option value="3">Entertainment</option>
+                            <option value="3">Animation</option>
+                        </select>
+                        <input type="text" placeholder="Product price" required>
+                        <textarea name="textarea">Product description</textarea>
+                        <button type="submit" class="btn-add-product">Add Product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Attendant Modal -->
+    <div class="container">
+        <div class="modal" id="addAttendantModal">
+            <div class="modal-content">
+                <span class="cancel">&times;</span>
+                <div class="add-attendant">
+                    <h2>Add Attendant</h2>
+                    <form action="#">
+                        <input type="text" placeholder="Enter email address" required>
+                        <textarea name="textarea">Message...</textarea>
+                        <button type="submit" class="btn-add-attendant">Send Invite</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
